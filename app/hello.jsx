@@ -1,10 +1,7 @@
+import React from 'react';
 
-function innerHello() {
-    var element = document.createElement('h1');
-
-    element.innerHTML = 'Hello world';
-
-    return element;
-};
-
-export { innerHello as hello };
+export default class hello extends React.Component {
+  render() {
+    return <h1>Hello world</h1>;
+  }
+}
